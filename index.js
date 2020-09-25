@@ -5,5 +5,5 @@ function getblockid(name){
 
 Entry.block[`func_${getblockid('%1노래재생%2')}`].paramsKeyMap = { content: 0 };
 Entry.block[`func_${getblockid('%1노래재생%2')}`].func = (sprite, script) => {
-  window.open(Entry.variableContainer.getListByName('링크').array_[Number(script.getValue('content',script))-1])
+  window.open(Entry.variableContainer.getListByName('링크').array_[Number(script.getValue('content',script))-1].data)
 }
